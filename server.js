@@ -6,6 +6,7 @@ const PORT = 3001;
 //middleware for parsing JSON data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"))
 
 app.use('/', mainRouter)
 
