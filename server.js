@@ -1,7 +1,7 @@
 const express = require('express');
 const mainRouter = require('./routes/index.js')
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 //middleware for parsing JSON data
 app.use(express.json());
